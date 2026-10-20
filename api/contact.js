@@ -1,10 +1,8 @@
 // Receives the contact forms of the three landings and emails them via Resend.
 // El navegador solo habla con este endpoint (same-origin); el envío a Resend ocurre en servidor.
 // Env vars (Vercel → Settings → Environment Variables):
-//   RESEND_API_KEY  required
-//   CONTACT_TO      optional, default contacto@valuescorp.cl
-//   CONTACT_FROM    optional, default "Values Corp Web <onboarding@resend.dev>"
-//                   (use an address on a domain verified in Resend for production)
+
+
 
 const PAGES = { home: 'Values Corp', wealth: 'A&G Wealth Solutions', factoring: 'Factoring Solutions' };
 const LABELS = {
