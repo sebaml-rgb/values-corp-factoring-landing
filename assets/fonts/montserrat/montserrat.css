@@ -1,0 +1,20 @@
+/**
+ * Montserrat (variable, latin) — autohospedada para redes con firewall estricto.
+ * Licencia: SIL Open Font License 1.1 (Google Fonts / Julieta Ulanovsky).
+ * Pesos 100–900 en normal e itálica; suficiente para es-CL y páginas legales.
+ */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./montserrat-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./montserrat-italic-latin.woff2") format("woff2");
+}

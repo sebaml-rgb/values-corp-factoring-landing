@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/factoring.html" },
+    { "source": "/equipo", "destination": "/factoring-equipo.html" },
+    { "source": "/factoring/equipo", "destination": "/factoring-equipo.html" },
+    { "source": "/soluciones", "destination": "/factoring-soluciones.html" },
+    { "source": "/factoring/soluciones", "destination": "/factoring-soluciones.html" },
+    { "source": "/privacidad", "destination": "/privacidad.html" },
+    { "source": "/terminos", "destination": "/terminos.html" }
+  ]
+}

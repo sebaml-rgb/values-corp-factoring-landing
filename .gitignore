@@ -1,0 +1,6 @@
+.vercel
+.DS_Store
+.thumbnail
+.env*
+uploads
+*.dc.html
