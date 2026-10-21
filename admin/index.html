@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CMS · Values Corp Factoring</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/fonts/montserrat/montserrat.css">
+  <style>
+    :root {
+      --fs-dark: #2D5D4C;
+      --fs-mid: #629641;
+      --fs-brand: #83AC64;
+      --fs-mint: #EBF4E8;
+      --fs-pale: #D6E9CF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Montserrat, sans-serif; color: #282828;
+      background: #F4FAF0; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 32px 24px 64px; }
+    h1 { font-size: 28px; font-weight: 300; margin: 0 0 8px; }
+    .sub { color: #595959; font-size: 14px; margin: 0 0 28px; }
+    .card {
+      background: #fff; border: 1px solid #E3EAE0; border-radius: 16px;
+      padding: 24px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(45, 93, 76, 0.06);
+    }
+    label { display: grid; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #595959; margin-bottom: 16px; }
+    input, textarea, select {
+      font: inherit; font-size: 15px; letter-spacing: 0; padding: 12px 14px;
+      border: 1px solid #C6C6C6; border-radius: 10px; width: 100%;
+    }
+    textarea { min-height: 100px; resize: vertical; line-height: 1.55; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .tab {
+      border: 1px solid #D9E2D4; background: #fff; color: #282828;
+      font-size: 13px; font-weight: 600; padding: 10px 16px; border-radius: 999px; cursor: pointer;
+    }
+    .tab[aria-selected="true"] { background: var(--fs-dark); color: #fff; border-color: var(--fs-dark); }
+    .panel[hidden] { display: none; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
+    .btn {
+      appearance: none; border: 0; cursor: pointer; font: inherit;
+      font-size: 14px; font-weight: 700; letter-spacing: 0.04em;
+      padding: 14px 22px; border-radius: 999px;
+    }
+    .btn-primary { background: var(--fs-brand); color: #282828; }
+    .btn-ghost { background: transparent; color: var(--fs-dark); border: 1px solid #C6C6C6; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 8px; }
+    .status { font-size: 13px; color: #595959; min-height: 20px; }
+    .status.ok { color: var(--fs-mid); }
+    .status.err { color: #A22341; }
+    .member {
+      border: 1px dashed #D9E2D4; border-radius: 12px; padding: 16px; margin-bottom: 12px;
+    }
+    .member h4 { margin: 0 0 12px; font-size: 14px; font-weight: 600; color: var(--fs-dark); }
+    #loginView { max-width: 420px; margin: 12vh auto; }
+  </style>
+</head>
+<body>
+  <div id="loginView" class="wrap">
+    <div class="card">
+      <h1>CMS Factoring</h1>
+      <p class="sub">Ingresa la contraseña del panel de contenidos.</p>
+      <label>Contraseña
+        <input type="password" id="loginPassword" autocomplete="current-password" />
+      </label>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="loginBtn">Entrar</button>
+      </div>
+      <p class="status" id="loginStatus"></p>
+    </div>
+  </div>
+
+  <div id="appView" class="wrap" hidden>
+    <h1>Contenido del sitio</h1>
+    <p class="sub">Los cambios se guardan en <code>cms/content.json</code> y se aplican al HTML al publicar.</p>
+
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab" data-tab="site" aria-selected="true">Sitio</button>
+      <button type="button" class="tab" data-tab="home">Home</button>
+      <button type="button" class="tab" data-tab="soluciones">Soluciones</button>
+      <button type="button" class="tab" data-tab="proceso">Proceso</button>
+      <button type="button" class="tab" data-tab="equipo">Equipo</button>
+      <button type="button" class="tab" data-tab="legal">Legal</button>
+      <button type="button" class="tab" data-tab="json">JSON</button>
+    </div>
+
+    <div id="panel-site" class="panel card" role="tabpanel">
+      <div class="row">
+        <label>Teléfono (visible)
+          <input data-path="site.contact.phoneDisplay" />
+        </label>
+        <label>Teléfono (tel:)
+          <input data-path="site.contact.phoneTel" />
+        </label>
+      </div>
+      <label>Email
+        <input data-path="site.contact.email" />
+      </label>
+      <label>Tagline footer
+        <input data-path="site.tagline" />
+      </label>
+      <label>CTA principal
+        <input data-path="site.ctaLabel" />
+      </label>
+    </div>
+
+    <div id="panel-home" class="panel card" hidden role="tabpanel">
+      <label>Meta description
+        <textarea data-path="home.meta.description"></textarea>
+      </label>
+      <label>Título hero
+        <textarea data-path="home.hero.title"></textarea>
+      </label>
+      <label>Bajada hero
+        <textarea data-path="home.hero.lead"></textarea>
+      </label>
+      <label>Línea ubicación
+        <input data-path="home.hero.locationLine" />
+      </label>
+      <hr style="border:0;border-top:1px solid #E3EAE0;margin:28px 0" />
+      <h3 style="margin:0 0 16px;font-size:16px;font-weight:600;color:var(--fs-dark)">Sección «Cómo funciona»</h3>
+      <label>Título
+        <input data-path="home.como.title" />
+      </label>
+      <label>Bajada
+        <textarea data-path="home.como.lead"></textarea>
+      </label>
+      <label>Texto bajo el botón
+        <textarea data-path="home.como.hint"></textarea>
+      </label>
+      <div id="stepsList"></div>
+      <hr style="border:0;border-top:1px solid #E3EAE0;margin:28px 0" />
+      <h3 style="margin:0 0 16px;font-size:16px;font-weight:600;color:var(--fs-dark)">Pilares (por qué nosotros)</h3>
+      <div id="pilaresList"></div>
+      <hr style="border:0;border-top:1px solid #E3EAE0;margin:28px 0" />
+      <h3 style="margin:0 0 16px;font-size:16px;font-weight:600;color:var(--fs-dark)">Banda soluciones (home)</h3>
+      <label>Título
+        <input data-path="home.solutionsBand.title" />
+      </label>
+      <label>Bajada
+        <textarea data-path="home.solutionsBand.lead"></textarea>
+      </label>
+      <label>Botón
+        <input data-path="home.solutionsBand.cta" />
+      </label>
+    </div>
+
+    <div id="panel-soluciones" class="panel card" hidden role="tabpanel">
+      <label>Meta description
+        <textarea data-path="soluciones.meta.description"></textarea>
+      </label>
+      <label>Título hero
+        <input data-path="soluciones.hero.title" />
+      </label>
+      <label>Bajada hero
+        <textarea data-path="soluciones.hero.lead"></textarea>
+      </label>
+      <label>Etiqueta de sección
+        <input data-path="soluciones.sectionTag" />
+      </label>
+      <p style="font-size:13px;color:#595959;margin:24px 0 8px">Catálogo (home, modal y página Soluciones comparten estos ítems).</p>
+      <div id="catalogList"></div>
+      <button type="button" class="btn btn-ghost" id="addCatalog">+ Agregar solución</button>
+    </div>
+
+    <div id="panel-proceso" class="panel card" hidden role="tabpanel">
+      <p style="font-size:13px;color:#595959;margin:0 0 20px">Modal «Ver el Proceso»: operación, onboarding (simulación) y requisitos.</p>
+      <label>Título modal
+        <input data-path="home.processModal.title" />
+      </label>
+      <label>Intro 1
+        <textarea data-path="home.processModal.lead1"></textarea>
+      </label>
+      <label>Intro 2
+        <textarea data-path="home.processModal.lead2"></textarea>
+      </label>
+      <label>Flujo (HTML con flechas)
+        <textarea data-path="home.processModal.flowTextHtml"></textarea>
+      </label>
+      <label>Nota final
+        <textarea data-path="home.processModal.footerNote"></textarea>
+      </label>
+      <label>Intervalo animación (ms, mín. 800)
+        <input type="number" min="800" step="100" data-path="home.processModal.storyBeatIntervalMs" />
+      </label>
+      <h3 style="margin:24px 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Narración animación (8 fases)</h3>
+      <p style="font-size:13px;color:#595959;margin:0 0 12px">Texto que aparece arriba del diagrama mientras avanza la animación (beats 1–8).</p>
+      <div id="processStoryBeatsList"></div>
+      <h3 style="margin:24px 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Actores (fase 1)</h3>
+      <div id="processActorsList"></div>
+      <h3 style="margin:24px 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Onboarding / simulador</h3>
+      <div id="processOnboardList"></div>
+      <h3 style="margin:24px 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Requisitos</h3>
+      <div id="processReqList"></div>
+    </div>
+
+    <div id="panel-equipo" class="panel card" hidden role="tabpanel">
+      <label>Título página
+        <input data-path="equipo.hero.title" />
+      </label>
+      <label>Bajada
+        <textarea data-path="equipo.hero.lead"></textarea>
+      </label>
+      <label>Cita — título
+        <input data-path="equipo.quote.heading" />
+      </label>
+      <label>Cita — cuerpo
+        <textarea data-path="equipo.quote.body"></textarea>
+      </label>
+      <label>Cita — atribución
+        <textarea data-path="equipo.quote.cite"></textarea>
+      </label>
+      <h3 style="margin:0 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Directores</h3>
+      <div id="directorsList"></div>
+      <button type="button" class="btn btn-ghost" data-add-team="equipo.directors">+ Agregar director</button>
+      <h3 style="margin:28px 0 12px;font-size:16px;font-weight:600;color:var(--fs-dark)">Liderazgo</h3>
+      <div id="leadersList"></div>
+      <button type="button" class="btn btn-ghost" data-add-team="equipo.leaders">+ Agregar persona</button>
+    </div>
+
+    <div id="panel-legal" class="panel card" hidden role="tabpanel">
+      <label>Privacidad — fecha
+        <input data-path="legal.privacidad.updated" />
+      </label>
+      <div id="legalPrivacidadList"></div>
+      <button type="button" class="btn btn-ghost" id="addLegalPrivacidad">+ Sección privacidad</button>
+      <hr style="border:0;border-top:1px solid #E3EAE0;margin:28px 0" />
+      <label>Términos — fecha
+        <input data-path="legal.terminos.updated" />
+      </label>
+      <div id="legalTerminosList"></div>
+      <button type="button" class="btn btn-ghost" id="addLegalTerminos">+ Sección términos</button>
+      <p style="font-size:12px;line-height:1.55;color:#595959;margin-top:16px">En viñetas y párrafos puedes usar HTML básico (<code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>).</p>
+    </div>
+
+    <div id="panel-json" class="panel card" hidden role="tabpanel">
+      <label>Contenido completo
+        <textarea id="jsonEditor" style="min-height:420px;font-family:ui-monospace,monospace;font-size:13px"></textarea>
+      </label>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn btn-primary" id="saveBtn">Guardar cambios</button>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Cerrar sesión</button>
+      <a class="btn btn-ghost" href="/" target="_blank" rel="noopener">Ver sitio</a>
+    </div>
+    <p class="status" id="saveStatus"></p>
+  </div>
+
+  <script src="/admin/cms-app.js"></script>
+  <script>
+    let content = null;
+
+    function getPath(obj, path) {
+      return path.split('.').reduce((a, k) => (a && a[k] !== undefined ? a[k] : ''), obj);
+    }
+    function setPath(obj, path, value) {
+      const keys = path.split('.');
+      let cur = obj;
+      for (let i = 0; i < keys.length - 1; i++) {
+        if (!cur[keys[i]] || typeof cur[keys[i]] !== 'object') cur[keys[i]] = {};
+        cur = cur[keys[i]];
+      }
+      cur[keys[keys.length - 1]] = value;
+    }
+
+    function bindFormFromContent() {
+      document.querySelectorAll('[data-path]').forEach((el) => {
+        const v = getPath(content, el.dataset.path);
+        el.value = v ?? '';
+      });
+      document.getElementById('jsonEditor').value = JSON.stringify(content, null, 2);
+    }
+
+    function mergeFormIntoContent() {
+      document.querySelectorAll('[data-path]').forEach((el) => {
+        setPath(content, el.dataset.path, el.value);
+      });
+    }
+
+    function syncJsonFromContent() {
+      document.getElementById('jsonEditor').value = JSON.stringify(content, null, 2);
+    }
+
+    document.querySelectorAll('.tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', 'false'));
+        tab.setAttribute('aria-selected', 'true');
+        document.querySelectorAll('.panel').forEach((p) => p.hidden = true);
+        document.getElementById('panel-' + tab.dataset.tab).hidden = false;
+      });
+    });
+
+    async function api(path, opts = {}) {
+      const r = await fetch(path, {
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json', ...(opts.headers || {}) },
+        ...opts,
+      });
+      const data = await r.json().catch(() => ({}));
+      return { ok: r.ok, status: r.status, data };
+    }
+
+    async function tryLoad() {
+      const { ok, data } = await api('/api/cms/content');
+      if (!ok) return false;
+      content = data.content;
+      bindFormFromContent();
+      window.CmsEditors?.init(content, api);
+      document.getElementById('loginView').hidden = true;
+      document.getElementById('appView').hidden = false;
+      return true;
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', async () => {
+      const st = document.getElementById('loginStatus');
+      st.textContent = '';
+      const password = document.getElementById('loginPassword').value;
+      const { ok, status, data } = await api('/api/cms/login', {
+        method: 'POST',
+        body: JSON.stringify({ password }),
+      });
+      if (!ok) {
+        if (data.error === 'config') {
+          st.textContent = data.message || 'CMS_PASSWORD no configurada en el servidor';
+        } else if (status === 404 || status === 0) {
+          st.textContent = 'No hay API. Usa npm run dev:cms (no solo serve en :3456).';
+        } else if (data.error === 'rate') {
+          st.textContent = 'Demasiados intentos. Espera unos minutos e inténtalo de nuevo.';
+        } else {
+          st.textContent = 'Contraseña incorrecta';
+        }
+        st.className = 'status err';
+        return;
+      }
+      await tryLoad();
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      await api('/api/cms/login', { method: 'DELETE' });
+      location.reload();
+    });
+
+    document.getElementById('saveBtn').addEventListener('click', async () => {
+      const st = document.getElementById('saveStatus');
+      st.textContent = 'Guardando…';
+      st.className = 'status';
+      const onJsonTab = !document.getElementById('panel-json').hidden;
+      if (onJsonTab) {
+        try {
+          content = JSON.parse(document.getElementById('jsonEditor').value);
+        } catch {
+          st.textContent = 'JSON inválido en la pestaña JSON';
+          st.className = 'status err';
+          return;
+        }
+      } else {
+        mergeFormIntoContent();
+        window.CmsEditors?.sync();
+        syncJsonFromContent();
+      }
+      bindFormFromContent();
+      const { ok, data } = await api('/api/cms/content', {
+        method: 'PUT',
+        body: JSON.stringify({ content }),
+      });
+      if (!ok) {
+        st.textContent = data.message || 'No se pudo guardar';
+        st.className = 'status err';
+        return;
+      }
+      st.textContent = data.hint || 'Guardado';
+      st.className = 'status ok';
+      if (data.applyError) {
+        st.textContent += ' · apply-cms: ' + data.applyError;
+        st.className = 'status err';
+      }
+    });
+
+    tryLoad();
+  </script>
+</body>
+</html>

@@ -6,6 +6,7 @@
     { "source": "/soluciones", "destination": "/factoring-soluciones.html" },
     { "source": "/factoring/soluciones", "destination": "/factoring-soluciones.html" },
     { "source": "/privacidad", "destination": "/privacidad.html" },
-    { "source": "/terminos", "destination": "/terminos.html" }
+    { "source": "/terminos", "destination": "/terminos.html" },
+    { "source": "/admin", "destination": "/admin/index.html" }
   ]
 }

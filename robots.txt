@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /admin
 
 User-agent: Googlebot
 User-agent: Bingbot
@@ -13,5 +14,6 @@ User-agent: PerplexityBot
 User-agent: CCBot
 Allow: /
 Disallow: /api/
+Disallow: /admin
 
 Sitemap: https://valuescorp.cl/sitemap.xml

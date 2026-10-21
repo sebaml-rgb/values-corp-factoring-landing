@@ -1,0 +1,418 @@
+{
+  "version": 1,
+  "site": {
+    "contact": {
+      "phoneDisplay": "+56 2 3377 4155",
+      "phoneTel": "+56233774155",
+      "email": "contacto.factoring@valuescorp.cl"
+    },
+    "tagline": "Tecnología que simplifica, personas que respaldan.",
+    "ctaLabel": "Financia aquí"
+  },
+  "home": {
+    "meta": {
+      "description": "El flujo de caja no espera. Más de 30 años de experiencia, proceso digital simple y respaldo del Grupo A&G. Simula y financia tu empresa en Chile."
+    },
+    "hero": {
+      "title": "Tecnología que simplifica, personas que respaldan",
+      "lead": "El flujo de caja no espera. Combinamos más de 30 años de experiencia con un proceso simple y directo, sin burocracia ni demoras.",
+      "locationLine": "Santiago, Chile · Cobertura nacional"
+    },
+    "pilares": [
+      { "icon": "bolt", "title": "Financiamiento ágil", "body": "Respuestas rápidas, porque tu liquidez no puede esperar." },
+      { "icon": "users", "title": "Asesoría cercana", "body": "Un equipo con experiencia que entiende tus necesidades." },
+      { "icon": "chart", "title": "Condiciones transparentes", "body": "Claras y sin letra chica. Sabes exactamente qué recibes." },
+      { "icon": "monitor", "title": "Proceso digital", "body": "Simula, opera y haz tu seguimiento en línea." },
+      { "icon": "lock", "title": "Cesión segura", "body": "Firma electrónica y seguimiento en línea de todas tus operaciones." },
+      { "icon": "award", "title": "Respaldo Grupo A&G", "body": "Los estándares del grupo español A&G, aplicados a tu liquidez." }
+    ],
+    "solutionsBand": {
+      "eyebrow": "SOLUCIONES",
+      "title": "Liquidez ágil para tu negocio",
+      "lead": "No vendemos productos: resolvemos flujo de caja, pago a proveedores y financiamiento con productos a la medida.",
+      "cta": "Explorar soluciones"
+    },
+    "como": {
+      "eyebrow": "CÓMO FUNCIONA",
+      "title": "Liquidez en cuatro simples pasos",
+      "lead": "Proceso digital, con el acompañamiento de un ejecutivo desde el primer momento.",
+      "button": "Ver el Proceso",
+      "hint": "En el detalle verás cómo interactúan tu empresa, Values Corp Factoring y el deudor, y el recorrido animado de cada paso.",
+      "steps": [
+        {
+          "title": "Hazte cliente",
+          "body": "Completa tu registro en línea y carga los antecedentes de tu empresa.",
+          "bodyLong": "Completa tu registro en línea y carga los antecedentes de tu empresa. La evaluación es ágil y 100% digital."
+        },
+        {
+          "title": "Te contacta un ejecutivo",
+          "body": "Un ejecutivo te acompaña, evalúa tu caso y resuelve tus dudas.",
+          "bodyLong": "Un ejecutivo te acompaña, evalúa tu caso, resuelve dudas y agiliza la aprobación."
+        },
+        {
+          "title": "Simula y aprueba",
+          "body": "Conoce el monto al instante y confirma la operación con un clic.",
+          "bodyLong": "Conoce el monto al instante, revisa condiciones transparentes y confirma la operación con un clic."
+        },
+        {
+          "title": "Recibe tu liquidez",
+          "body": "El abono llega a tu cuenta, sin papeleo ni traslados.",
+          "bodyLong": "El abono llega a tu cuenta tras la aprobación, sin papeleo ni traslados a oficinas."
+        }
+      ]
+    },
+    "processModal": {
+      "eyebrow": "PROCESO DETALLADO",
+      "title": "Liquidez en simples pasos",
+      "lead1": "Diseñamos un proceso digital para que obtengas el financiamiento que tu empresa necesita, con el acompañamiento de un ejecutivo de principio a fin.",
+      "lead2": "En lugar de esperar 30, 60 o 90 días a que te paguen una factura, recibe hoy la mayor parte de ese monto. Nosotros nos encargamos de lo demás.",
+      "phase1Label": "FASE 1 · LA OPERACIÓN",
+      "actors": [
+        { "title": "Tu empresa", "body": "Emite una factura y cede ese documento para obtener liquidez inmediata." },
+        { "title": "Values Corp Factoring", "body": "Evalúa la operación, anticipa el efectivo y gestiona el cobro de forma transparente." },
+        { "title": "El deudor", "body": "Tu cliente paga la factura en su plazo original, sin fricción en la relación comercial." }
+      ],
+      "flowTextHtml": "Emites factura <span class=\"arrow\">→</span> Cedes el documento <span class=\"arrow\">→</span> Recibes el anticipo <span class=\"arrow\">→</span> El deudor paga a su vencimiento",
+      "phase2Label": "Fase 2 · Tu onboarding",
+      "onboardingTabs": ["01 Registro", "02 Ejecutivo", "03 Simulación", "04 Abono"],
+      "onboarding": [
+        { "stepLabel": "01 · Registro", "image": "/assets/onboarding/registro.png" },
+        { "stepLabel": "02 · Ejecutivo", "image": "/assets/onboarding/analista.png" },
+        { "stepLabel": "03 · Simulación", "image": "/assets/onboarding/simulacion.png" },
+        { "stepLabel": "04 · Abono", "image": "/assets/onboarding/billete.png" }
+      ],
+      "footerNote": "Proceso digital donde la cesión y la operación se hacen en línea, y siempre cuentas con un ejecutivo que te acompaña desde el primer contacto.",
+      "requirementsTitle": "Lo que necesitas para empezar",
+      "requirements": [
+        { "title": "Antecedentes", "body": "Antecedentes legales y financieros de la empresa.", "icon": "/assets/requisitos/antecedentes.png" },
+        { "title": "Documentos por cobrar", "body": "Facturas electrónicas, cheques u otros documentos válidos.", "icon": "/assets/requisitos/documentos.png" },
+        { "title": "Cuenta bancaria", "body": "Para recibir el abono de tus operaciones.", "icon": "/assets/requisitos/cuenta.png" },
+        { "title": "Firma electrónica", "body": "Para realizar la cesión digital de forma segura.", "icon": "/assets/requisitos/firma.png" }
+      ],
+      "ctaPrimary": "Sé parte desde hoy",
+      "ctaClose": "Cerrar",
+      "storyBeatIntervalMs": 2400,
+      "storyBeats": [
+        {
+          "label": "Animación · 1 de 8",
+          "title": "Tu empresa necesita liquidez",
+          "body": "Anticipas el cobro de facturas a crédito sin esperar el plazo de pago del cliente."
+        },
+        {
+          "label": "Animación · 2 de 8",
+          "title": "Values Corp Factoring entra en escena",
+          "body": "Evaluamos la operación, formalizamos la cesión y anticipamos el flujo a tu cuenta."
+        },
+        {
+          "label": "Animación · 3 de 8",
+          "title": "El deudor cumple su rol",
+          "body": "Tu cliente paga la factura en la fecha acordada; nosotros gestionamos el cobro con transparencia."
+        },
+        {
+          "label": "Animación · 4 de 8",
+          "title": "Así se conecta la operación",
+          "body": "Desde la emisión de la factura hasta el pago del deudor, cada paso está diseñado para ser claro y digital."
+        },
+        {
+          "label": "Onboarding · 5 de 8",
+          "title": "Hazte cliente",
+          "body": "Completa tu registro en línea y carga los antecedentes de tu empresa. La evaluación es ágil y 100% digital."
+        },
+        {
+          "label": "Onboarding · 6 de 8",
+          "title": "Te contacta un ejecutivo",
+          "body": "Un ejecutivo te acompaña, evalúa tu caso, resuelve dudas y agiliza la aprobación."
+        },
+        {
+          "label": "Onboarding · 7 de 8",
+          "title": "Simula y aprueba",
+          "body": "Conoce el monto al instante, revisa condiciones transparentes y confirma la operación con un clic."
+        },
+        {
+          "label": "Onboarding · 8 de 8",
+          "title": "Recibe tu liquidez",
+          "body": "El abono llega a tu cuenta tras la aprobación, sin papeleo ni traslados a oficinas."
+        }
+      ]
+    },
+    "grupo": {
+      "opportunityEyebrow": "POR QUÉ AHORA",
+      "opportunityTitle": "La oportunidad de Values Corp",
+      "opportunityBody": "El mercado chileno demanda mayor especialización y conexión con oportunidades internacionales. Buscamos crear un nuevo estándar en la industria financiera chilena.",
+      "backingEyebrow": "EL RESPALDO",
+      "backingTitle": "Sobre A&G",
+      "backingLead": "Una trayectoria independiente que fortalece nuestra propuesta con experiencia, especialización y visión global.",
+      "backingBody": "Grupo A&G, fundado en 1987 por Alberto Rodríguez-Fraile, fue el primer multi-family office de España y hoy es una entidad líder e independiente de banca privada en el país. Su modelo integra gestión de activos, asesoría personalizada y banca privada, y cuenta con gestoras propias en España y Luxemburgo.",
+      "stats": [
+        { "num": "1987", "label": "ORIGEN DE A&G", "desc": "Nació como el primer multi-family office de España." },
+        { "num": "+100", "label": "BANQUEROS", "desc": "Un equipo especializado, distribuido en once oficinas." },
+        { "num": "USD 21.000M", "numCompact": true, "label": "EN ACTIVOS BAJO GESTIÓN", "desc": "Al cierre de junio de 2026." }
+      ]
+    },
+    "testimonial": {
+      "quote": "«Llevamos años financiando a empresas chilenas y aprendimos algo simple: la confianza se gana respondiendo rápido y cumpliendo lo que se promete. Eso es lo que ofrecemos en cada operación.»",
+      "name": "Ignacio Prado",
+      "role": "Gerente General · Values Corp Factoring",
+      "photo": "/assets/equipo/ignacio-prado.webp"
+    },
+    "contactSection": {
+      "eyebrow": "CONTACTO",
+      "title": "Empieza a financiar tu empresa desde hoy",
+      "lead": "Activa tu línea y recibe el acompañamiento de un ejecutivo desde el primer paso.",
+      "locationLine": "Santiago, Chile · Cobertura nacional"
+    },
+    "solModal": {
+      "title": "Encuentra tu solución de liquidez",
+      "lead": "No vendemos productos genéricos: cada alternativa responde a un problema concreto de caja. Elige la que más se parezca a tu situación y te mostramos cómo ayuda.",
+      "asideTitle": "¿No estás seguro cuál elegir?",
+      "asideBody": "Un ejecutivo te orienta según tu rubro y tu ciclo de ventas. Operamos a menudo en estos sectores:",
+      "footnote": "Si tu rubro no aparece aquí, igual podemos evaluar tu caso si vendes a crédito a otras empresas.",
+      "chips": ["Minería", "Construcción", "Transporte", "Comercio mayorista", "Agro", "Industria"]
+    }
+  },
+  "soluciones": {
+    "meta": {
+      "description": "Factoring electrónico, tradicional, confirming, anticipo de cheques y más. Soluciones de liquidez para el flujo de caja de tu empresa en Chile."
+    },
+    "hero": {
+      "title": "Liquidez ágil para tu negocio",
+      "lead": "No vendemos productos, resolvemos los problemas reales de tu flujo de caja, el pago a proveedores y el financiamiento de tu empresa."
+    },
+    "sectionTag": "Factoring",
+    "catalog": [
+      {
+        "icon": "invoice",
+        "pain": "«Mis clientes me pagan a 30, 60 o 90 días»",
+        "title": "Factoring electrónico",
+        "summary": "Facturas electrónicas con cesión segura y abono tras aprobación.",
+        "body": "Convierte tus facturas electrónicas en liquidez, con cesión segura y abono instantáneo tras la aprobación."
+      },
+      {
+        "icon": "briefcase",
+        "pain": "«Necesito una línea a la medida de mi operación»",
+        "title": "Factoring tradicional",
+        "summary": "Ejecutivo dedicado y línea ajustada a tu operación.",
+        "body": "Para medianas y grandes empresas, con un ejecutivo dedicado y una línea ajustada a tu negocio."
+      },
+      {
+        "icon": "card",
+        "pain": "«Tengo cheques a fecha que el banco no financia»",
+        "title": "Anticipo de cheques",
+        "summary": "Liquidez simple y segura sobre tus cheques.",
+        "body": "Convierte tus cheques a fecha en liquidez de forma simple y segura."
+      },
+      {
+        "icon": "file",
+        "pain": "«Mi documento no es una factura»",
+        "title": "Otros documentos",
+        "summary": "Letras, pagarés, OC y contratos con acompañamiento.",
+        "body": "Letras, pagarés, órdenes de compra y contratos, con el acompañamiento de tu ejecutivo en todo el proceso."
+      },
+      {
+        "icon": "sync",
+        "pain": "«Quiero cuidar a mis proveedores»",
+        "title": "Confirming",
+        "summary": "Anticipo a proveedores y orden en tus pagos.",
+        "body": "Gestiona y adelanta el pago a tus proveedores, mejorando la relación comercial sin tensionar tu flujo de caja."
+      }
+    ],
+    "compareBand": {
+      "title": "¿Cuál te conviene según tu caso?",
+      "lead": "Cada solución resuelve un problema distinto de flujo de caja, y cada una puede operarse con recurso o sin recurso. Si tienes dudas antes de conversar, escríbenos y te orientamos.",
+      "cta": "Cuéntanos tu caso"
+    },
+    "industries": {
+      "eyebrow": "Industrias",
+      "title": "Entendemos cómo opera cada rubro",
+      "lead": "Ningún sector funciona igual que otro. Conocer el ciclo de pago de tu industria es lo que permite estructurar bien una operación.",
+      "chips": ["Minería", "Construcción e inmobiliaria", "Transporte y logística", "Comercio mayorista", "Agricultura y silvicultura", "Acuicultura", "Industria y manufactura"],
+      "noteTitle": "¿Tu rubro no está en la lista?",
+      "noteBody": "Estos son los sectores donde más operamos, pero no son los únicos. Si tu empresa vende a crédito a otras empresas, hay una solución posible.",
+      "noteBodyHtml": "Estos son los sectores donde más operamos, pero no son los únicos. Si tu empresa vende a crédito a otras empresas, hay una solución posible. <a href=\"/factoring#contacto\">Cuéntanos tu caso</a>."
+    },
+    "cta": {
+      "title": "¿No sabes cuál es tu solución?",
+      "lead": "Cuéntanos tu caso y un ejecutivo te recomienda la mejor alternativa.",
+      "button": "Contáctate con un ejecutivo"
+    },
+    "footerTagline": "Liquidez ágil, transparente y cercana para empresas. Respaldado por Grupo A&G."
+  },
+  "equipo": {
+    "hero": {
+      "title": "Quiénes somos",
+      "lead": "Un factoring que nace de la unión entre socios chilenos de trayectoria en el sistema financiero y el respaldo del grupo español A&G."
+    },
+    "quote": {
+      "heading": "El flujo de caja no espera",
+      "body": "«En Values Corp Factoring combinamos más de 30 años de experiencia en el mundo del financiamiento con un proceso simple y directo, sin burocracia, sin demoras, con personas reales que entienden tu negocio.»",
+      "cite": "Traemos al mercado chileno los estándares de exigencia y calidad del grupo español A&G, aplicados al anticipo de tus facturas."
+    },
+    "values": [
+      { "title": "Agilidad", "body": "Procesos digitales y respuestas rápidas, porque tu liquidez no puede esperar." },
+      { "title": "Transparencia", "body": "Condiciones claras, sin letra chica ni sorpresas en el camino." },
+      { "title": "Cercanía", "body": "Un equipo que entiende tu negocio y te acompaña en cada momento." },
+      { "title": "Respaldo", "body": "La solidez y los estándares del Grupo A&G detrás de cada operación." }
+    ],
+    "directors": [
+      { "name": "Renato Peñafiel", "role": "Director", "photo": { "webp": "/assets/equipo/renato-penafiel.webp", "jpg": "/assets/equipo/renato-penafiel.jpg" } },
+      { "name": "Naoshi Matsumoto", "role": "Director", "photo": { "webp": "/assets/equipo/naoshi-matsumoto.webp", "jpg": "/assets/equipo/naoshi-matsumoto.jpg" } },
+      { "name": "Gonzalo Pavez", "role": "Director", "photo": { "webp": "/assets/equipo/gonzalo-pavez.webp", "jpg": "/assets/equipo/gonzalo-pavez.jpg" } },
+      { "name": "Álvaro Vial", "role": "Director", "initials": "AV" },
+      { "name": "Fernando Salinas", "role": "Director", "photo": { "webp": "/assets/equipo/fernando-salinas.webp", "jpg": "/assets/equipo/fernando-salinas.jpg" } },
+      { "name": "Rafael Soldevilla", "role": "Director", "initials": "RS" },
+      { "name": "Nicolás Sorensen", "role": "Director", "initials": "NS" }
+    ],
+    "leaders": [
+      { "name": "Ignacio Prado", "role": "Gerente General", "photo": { "webp": "/assets/equipo/ignacio-prado.webp", "jpg": "/assets/equipo/ignacio-prado.jpg" } },
+      { "name": "Humberto Grattini", "role": "Gerente Comercial", "initials": "HG" },
+      { "name": "Gabriel Becerra", "role": "Gerente de Operaciones y Tecnología", "initials": "GB" },
+      { "name": "Alvin Cea", "role": "Subgerente Comercial Zona Norte", "initials": "AC" },
+      { "name": "Francisco Puelma", "role": "Subgerente Comercial Zona Sur", "initials": "FP" }
+    ]
+  },
+  "legal": {
+    "privacidad": {
+      "updated": "6 de octubre de 2026",
+      "sections": [
+        {
+          "paragraphs": [
+            "En Values Corp Factoring Solutions (en adelante, «Values Corp Factoring») respetamos la privacidad de quienes visitan este sitio y nos escriben. Esta política explica qué datos personales recopilamos, para qué los usamos y cómo puedes ejercer tus derechos, conforme a la Ley N° 19.628 sobre Protección de la Vida Privada y, una vez vigente, la Ley N° 21.719 que regula la protección y el tratamiento de los datos personales."
+          ]
+        },
+        {
+          "title": "1. Responsable del tratamiento",
+          "paragraphs": [
+            "El responsable de los datos recopilados a través de este sitio es Values Corp Factoring Solutions, con domicilio en Santiago, Chile. Para cualquier consulta sobre privacidad puedes escribir a <a href=\"mailto:contacto.factoring@valuescorp.cl\">contacto.factoring@valuescorp.cl</a>."
+          ]
+        },
+        {
+          "title": "2. Datos que recopilamos",
+          "paragraphs": [
+            "Solo tratamos los datos que nos entregas voluntariamente en los formularios de contacto del sitio:"
+          ],
+          "list": [
+            "Nombre y apellido, o nombre de la empresa.",
+            "Correo electrónico.",
+            "La opción que selecciones (área de interés, perfil o tramo de facturación mensual).",
+            "El mensaje que escribas."
+          ],
+          "paragraphsAfter": [
+            "Este sitio no utiliza cookies de publicidad ni herramientas de analítica. Como cualquier sitio web, los servidores registran datos técnicos básicos de cada visita (como la dirección IP y el tipo de navegador) por razones de seguridad y funcionamiento. La tipografía Montserrat se carga desde este mismo sitio, sin enviar datos a terceros por ese motivo."
+          ]
+        },
+        {
+          "title": "3. Para qué usamos tus datos",
+          "list": [
+            "Responder tu consulta y coordinar una reunión o una evaluación, según lo que solicites.",
+            "Enviarte información relacionada con tu solicitud."
+          ],
+          "paragraphs": [
+            "No usamos tus datos para fines distintos de los indicados, no los vendemos y no los cedemos a terceros para fines comerciales. La base del tratamiento es tu consentimiento, que otorgas al enviar el formulario."
+          ]
+        },
+        {
+          "title": "4. Con quién los compartimos",
+          "paragraphs": [
+            "Para operar el sitio y recibir tus mensajes usamos proveedores tecnológicos que actúan por cuenta de Values Corp Factoring y solo con ese fin:"
+          ],
+          "list": [
+            "<strong>Vercel</strong>, para el alojamiento del sitio.",
+            "<strong>Resend</strong>, para el envío del correo con tu mensaje a nuestro equipo."
+          ],
+          "paragraphsAfter": [
+            "Estos proveedores pueden almacenar o procesar datos fuera de Chile, con medidas de seguridad adecuadas. También podremos comunicar datos a las sociedades del grupo Values Corp cuando sea necesario para atender tu solicitud, o a las autoridades cuando la ley lo exija."
+          ]
+        },
+        {
+          "title": "5. Cuánto tiempo los conservamos",
+          "paragraphs": [
+            "Conservamos tus datos mientras sea necesario para atender tu solicitud y mantener la relación que inicies con nosotros. Después los eliminamos o anonimizamos, salvo que una obligación legal exija conservarlos por más tiempo."
+          ]
+        },
+        {
+          "title": "6. Tus derechos",
+          "paragraphs": [
+            "Puedes solicitar en cualquier momento el acceso, la rectificación, la eliminación o la oposición al tratamiento de tus datos, además de los demás derechos que te reconozca la ley (como la portabilidad, cuando corresponda). También puedes retirar tu consentimiento. Para ello escribe a <a href=\"mailto:contacto.factoring@valuescorp.cl\">contacto.factoring@valuescorp.cl</a> indicando tu solicitud; te responderemos dentro de los plazos legales."
+          ]
+        },
+        {
+          "title": "7. Seguridad",
+          "paragraphs": [
+            "Aplicamos medidas técnicas y organizativas razonables para proteger tus datos, como el cifrado de las comunicaciones (HTTPS) y el acceso restringido a la información."
+          ]
+        },
+        {
+          "title": "8. Cambios a esta política",
+          "paragraphs": [
+            "Podemos actualizar esta política para reflejar cambios legales o en el funcionamiento del sitio. La versión vigente es siempre la publicada en esta página, con su fecha de última actualización."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "updated": "6 de octubre de 2026",
+      "sections": [
+        {
+          "paragraphs": [
+            "Estos términos regulan el uso del sitio web de Values Corp Factoring Solutions (en adelante, «Values Corp Factoring»). Al navegar por el sitio aceptas estos términos."
+          ]
+        },
+        {
+          "title": "1. Carácter informativo del contenido",
+          "paragraphs": [
+            "La información publicada en este sitio es general y referencial. No constituye una oferta, una recomendación de inversión, una asesoría financiera, legal o tributaria, ni una invitación a celebrar operaciones. Cualquier servicio de factoring se presta únicamente previa evaluación, firma de los contratos correspondientes y conforme a la normativa vigente.",
+            "Las rentabilidades pasadas no garantizan resultados futuros. Toda inversión conlleva riesgos, incluida la posible pérdida del capital."
+          ]
+        },
+        {
+          "title": "2. Simulador de factoring",
+          "paragraphs": [
+            "Los valores que entrega el simulador son estimaciones referenciales calculados con supuestos generales. No constituyen una cotización ni un compromiso de financiamiento. Las condiciones definitivas dependen de la evaluación de cada operación, del deudor de las facturas y de la documentación presentada."
+          ]
+        },
+        {
+          "title": "3. Formularios de contacto",
+          "paragraphs": [
+            "Enviar un formulario no genera una relación contractual ni obliga a Values Corp Factoring a prestar un servicio. Debes entregar información veraz. El tratamiento de tus datos se rige por nuestra <a href=\"/privacidad\">Política de privacidad</a>."
+          ]
+        },
+        {
+          "title": "4. Propiedad intelectual",
+          "paragraphs": [
+            "Las marcas Values Corp y Factoring Solutions, sus logotipos, textos, imágenes, diseños y demás contenidos del sitio pertenecen a Values Corp o a sus respectivos titulares. No está permitido reproducirlos, modificarlos ni usarlos con fines comerciales sin autorización previa y por escrito."
+          ]
+        },
+        {
+          "title": "5. Enlaces a otros sitios",
+          "paragraphs": [
+            "El sitio puede incluir enlaces a sitios de terceros. Values Corp Factoring no controla esos sitios y no es responsable de su contenido ni de sus políticas."
+          ]
+        },
+        {
+          "title": "6. Responsabilidad",
+          "paragraphs": [
+            "Values Corp Factoring procura que la información del sitio sea correcta y esté actualizada, pero no garantiza que esté libre de errores u omisiones ni que el sitio funcione sin interrupciones. En la medida permitida por la ley, Values Corp Factoring no responde por decisiones tomadas en base al contenido del sitio sin la asesoría correspondiente."
+          ]
+        },
+        {
+          "title": "7. Modificaciones",
+          "paragraphs": [
+            "Values Corp Factoring puede modificar estos términos y el contenido del sitio en cualquier momento. La versión vigente es la publicada en esta página, con su fecha de última actualización."
+          ]
+        },
+        {
+          "title": "8. Ley aplicable",
+          "paragraphs": [
+            "Estos términos se rigen por las leyes de la República de Chile. Cualquier controversia se someterá a los tribunales ordinarios de justicia de la ciudad de Santiago."
+          ]
+        },
+        {
+          "title": "9. Contacto",
+          "paragraphs": [
+            "Para consultas sobre estos términos escribe a <a href=\"mailto:contacto.factoring@valuescorp.cl\">contacto.factoring@valuescorp.cl</a>."
+          ]
+        }
+      ]
+    }
+  }
+}
