@@ -10,12 +10,36 @@
     {
       "source": "/factoring.html",
       "destination": "/",
-      "permanent": true
+      "permanent": true,
+      "has": [{ "type": "host", "value": "valuescorp.cl" }]
     },
     {
       "source": "/factoring",
       "destination": "/",
-      "permanent": true
+      "permanent": true,
+      "has": [{ "type": "host", "value": "valuescorp.cl" }]
+    },
+    {
+      "source": "/factoring.html",
+      "destination": "/",
+      "permanent": true,
+      "has": [{ "type": "host", "value": "www.valuescorp.cl" }]
+    },
+    {
+      "source": "/factoring",
+      "destination": "/",
+      "permanent": true,
+      "has": [{ "type": "host", "value": "www.valuescorp.cl" }]
+    },
+    {
+      "source": "/equipo",
+      "destination": "/factoring-equipo",
+      "permanent": false
+    },
+    {
+      "source": "/soluciones",
+      "destination": "/factoring-soluciones",
+      "permanent": false
     }
   ],
   "rewrites": [

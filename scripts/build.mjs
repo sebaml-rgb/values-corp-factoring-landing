@@ -45,6 +45,8 @@ async function main() {
   });
   if (apply.status !== 0) process.exit(apply.status ?? 1);
 
+  await fs.copyFile(path.join(DIST, 'factoring.html'), path.join(DIST, 'index.html'));
+
   console.log('build → dist listo');
 }
 
