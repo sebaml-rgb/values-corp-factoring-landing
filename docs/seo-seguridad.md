@@ -1,5 +1,5 @@
 # Revisión SEO y seguridad — Values Corp Factoring
-
+# Sebastian MArtinez L - sebastian.martinez@valuescorp.cl
 Última revisión: 2026-10-21.
 
 ## Resumen ejecutivo

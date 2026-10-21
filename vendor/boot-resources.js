@@ -1,4 +1,5 @@
 /**
+ * Sebastian Martinez Lopez - sebastian.martinez@valuescorp.cl
  * Redirige las URLs de CDN que usa dc-runtime (support.js) hacia copias en el mismo origen.
  * Muchos firewalls corporativos (Palo Alto, Zscaler, etc.) bloquean categorías "CDN" o dominios
  * como unpkg.com aunque el sitio sea legítimo. Debe cargarse antes de support.js.

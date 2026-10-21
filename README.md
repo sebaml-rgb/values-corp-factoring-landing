@@ -17,6 +17,7 @@ npx serve -l 3456 -c serve.json   # solo HTML; /admin no guarda
 **Panel CMS (login + guardar):**
 
 ```bash
+# sebastian.martinez@valuescorp.cl
 # .env en la raíz: CMS_PASSWORD=1234
 npm run dev:cms
 ```
